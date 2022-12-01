@@ -1,4 +1,4 @@
-function array_2d(x_max: number, y_max: number): number[][] {
+export function array_2d(x_max: number, y_max: number): number[][] {
     let array = []
     for (let i = 0; i <= x_max - 1; i++) {
         array[i] = []
@@ -9,6 +9,6 @@ function array_2d(x_max: number, y_max: number): number[][] {
     return array
 }
 
-function sleep(seconds: number) {
+export function sleep(seconds: number) {
     control.waitMicros(seconds * 1000000)
 }
